@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffb1fffa">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageView03"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/image_text"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_createdata_text"
+        android:id="@+id/btn_createdata"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff6a85"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_deletedata_text"
+        android:id="@+id/btn_deletedata"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff6a85"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_editdata_text"
+        android:id="@+id/btn_editdata"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:background="#ffff6a85"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_searchdata_text"
+        android:id="@+id/btn_searchdata"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffff6a85"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+</LinearLayout>

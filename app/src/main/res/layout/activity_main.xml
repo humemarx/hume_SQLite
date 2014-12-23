@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#fffaacff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/image_text"
+        android:src="@drawable/ic_launcher"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_db_text"
+        android:id="@+id/btn_db"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff4e61ff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_table_text"
+        android:id="@+id/btn_table"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff4e61ff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_data_text"
+        android:id="@+id/btn_data"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff4e61ff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+</LinearLayout>
