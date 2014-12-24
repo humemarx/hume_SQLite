@@ -27,12 +27,16 @@ public class NewData extends Activity {
     public final String MP = "mp";
     public final String NUM = "num";
 
+    /*创建SQL表的语句*/
+    private final String CREATE_TAB_NAME = "create table "+ TABLE_NAME+"("+"_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
+            "name text,"+"hp INTEGER DEFAULT 100,"+"mp INTEGER DEFAULT 100,"+"num INTEGER);";
     @Override
     protected void onCreate(Bundle savedInstanceState){
         setContentView(R.layout.create_data);
         mycontext = this;
         mysqldb = MySQLiteDb.getInstance(mycontext);
         mydb = mysqldb.getReadableDatabase();
+//        mydb.execSQL(CREATE_TAB_NAME);
         /*初始化数据*/
         for(int i=0; i<10; ++i){
             insert(NAME,"tcp的数据库"+i);
